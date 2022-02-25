@@ -3,6 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <title>Add React in One Minute</title>
+    <style>
+      .main,.balance,#transaction {
+        border:2px solid black;
+      }
+      .main {
+        width:75%;
+        margin:0 auto;
+        padding:40px;
+      }
+      .balance {
+        margin-bottom:20px;
+        text-align: center;
+        padding:10px 0;
+      }
+      .transaction {
+        padding:20px;
+      }
+      .head {
+        text-align:center;
+      }
+    </style>
   </head>
   <body>
 
@@ -38,7 +59,23 @@
     <h3>Output</h3>
     <p id="namers"></p>
     <p id="passwordrs"></p>
-    
+
+    <h2>New Task</h2>
+    <div class="main">
+      <h3 class="head">Expense Tracker-Basics</h3>
+      <div class="balance">
+        <h4>Balance:<span id="increment">0</span></h4>
+        <input type="number" name="amount" step="5" id="amount" value=""> 
+        <input type="submit" name="submit" value="add" onclick="increment(transaction)">
+        <input type="submit" name="submit" value="remove" onclick="decrement(transaction)">
+      </div>
+      <div id="transaction">
+        <h4>transaction</h4>
+
+      </div>
+    </div>
+
+
 
   </body>
 </html> 
