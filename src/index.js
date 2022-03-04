@@ -4,9 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {Expense,Login} from "./form"
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Login />
+    <Expense />
   </React.StrictMode>,
   document.getElementById('root')
 );
